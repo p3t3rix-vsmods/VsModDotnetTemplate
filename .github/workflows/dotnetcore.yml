@@ -8,15 +8,17 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
+    - name: Setup .NET Core @ Latest
       uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.101
-    - name: pack
-      run: dotnet pack
 
+    - name: pack
+      run: dotnet pack -c Release -o ./out
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: vsmodtemplate
+        path: ./out
