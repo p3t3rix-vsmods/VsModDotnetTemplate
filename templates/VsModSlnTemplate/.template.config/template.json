@@ -10,23 +10,7 @@
     "shortName": "vsmodsln",
     "sourceName": "VsModSlnTemplate",
     "preferNameDirectory": true,
-    "sources": [
-        {
-            "condition": "(visual-studio)",
-            "exclude": [ "**/[Bb]in/**", "**/[Oo]bj/**", ".template.config/**/*", "**/*.filelist", "**/*.lock.json" ]
-        }
-    ],
     "symbols": {
-        "visual-studio": {
-            "type": "parameter",
-            "datatype": "bool",
-            "defaultValue": "true"
-        },
-        "visual-studio-code": {
-            "type": "parameter",
-            "datatype": "bool",
-            "defaultValue": "false"
-        },
         "vs-dir": {
             "type": "parameter",
             "defaultValue": "$(VINTAGE_STORY)",
