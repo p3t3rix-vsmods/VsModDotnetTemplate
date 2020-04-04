@@ -13,8 +13,8 @@
     "forms": {
         "ValueAfterLastDot": {
             "identifier": "replace",
-            "pattern": "^.*\\.(?=[^\\.]+$)", // regex to match everything up to and including the final "."
-            "replacement": "" // replace it with empty string
+            "pattern": "^.*\\.(?=[^\\.]+$)",
+            "replacement": ""
         }
     },
     "symbols": {
