@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>{{TEMPLATE-VSDIR}}/VintagestoryAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="VSSurvivalMod" Condition="'$(add-survival)' == 'true'">
+      <HintPath>{{TEMPLATE-VSDIR}}/VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials" Condition="'$(add-essentials)' == 'true'">
+      <HintPath>{{TEMPLATE-VSDIR}}/VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod" Condition="'$(add-creative)' == 'true'">
+      <HintPath>{{TEMPLATE-VSDIR}}/VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="Copy" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Debug'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="{{TEMPLATE-VSDATADIR}}/Mods" />
+    <Copy SourceFiles="$(TargetDir)/$(TargetName).pdb" DestinationFolder="{{TEMPLATE-VSDATADIR}}/Mods" />
+  </Target>
+</Project>

@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "P3t3rix",
+    "classifications": [
+        "Vintage Story",
+        "Mod"
+    ],
+    "identity": "P3t3rix.VsModTemplate",
+    "name": "Vintage Story mod template",
+    "shortName": "vsmod",
+    "sourceName": "VsModTemplate",
+    "preferNameDirectory": true,
+    "forms": {
+        "ValueAfterLastDot": {
+            "identifier": "replace",
+            "pattern": "^.*\\.(?=[^\\.]+$)", // regex to match everything up to and including the final "."
+            "replacement": "" // replace it with empty string
+        }
+    },
+    "symbols": {
+        "project-name": {
+            "type": "derived",
+            "valueSource": "name",
+            "valueTransform": "ValueAfterLastDot",
+            "replaces": "{{TEMPLATE-NAME}}"
+        },
+        "mod-id": {
+            "type": "parameter",
+            "replaces": "{{TEMPLATE-MODID}}",
+            "description": "The modid of your mod, needs to be lowercase with no specials chars",
+            "isRequired": true
+        },
+        "vs-dir": {
+            "type": "parameter",
+            "defaultValue": "$(VINTAGE_STORY)",
+            "description": "The game directory of vintage story -- NOT RECOMMENDED -- Better use environment variables",
+            "replaces": "{{TEMPLATE-VSDIR}}"
+        },
+        "vs-data-dir": {
+            "type": "parameter",
+            "defaultValue": "$(VINTAGE_STORY_DATA)",
+            "description": "The data directory of vintage story -- NOT RECOMMENDED -- Better use environment variables",
+            "replaces": "{{TEMPLATE-VSDATADIR}}"
+        },
+        "add-essentials": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Whether to add a reference to vs-essentials",
+            "defaultValue": "false"
+        },
+        "add-survival": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Whether to add a reference to vs-survival",
+            "defaultValue": "false"
+        },
+        "add-creative": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Whether to add a reference to vs-creative",
+            "defaultValue": "false"
+        }
+    }
+}
