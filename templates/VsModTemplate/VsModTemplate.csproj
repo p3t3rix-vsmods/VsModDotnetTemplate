@@ -8,15 +8,15 @@
       <HintPath>{{TEMPLATE-VSDIR}}/VintagestoryAPI.dll</HintPath>
     </Reference>
     <Reference Include="VSSurvivalMod" Condition="'$(add-survival)' == 'true'">
-      <HintPath>{{TEMPLATE-VSDIR}}/VSSurvivalMod.dll</HintPath>
+      <HintPath>{{TEMPLATE-VSDIR}}/Mods/VSSurvivalMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VSEssentials" Condition="'$(add-essentials)' == 'true'">
-      <HintPath>{{TEMPLATE-VSDIR}}/VSEssentials.dll</HintPath>
+      <HintPath>{{TEMPLATE-VSDIR}}/Mods/VSEssentials.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VSCreativeMod" Condition="'$(add-creative)' == 'true'">
-      <HintPath>{{TEMPLATE-VSDIR}}/VSCreativeMod.dll</HintPath>
+      <HintPath>{{TEMPLATE-VSDIR}}/Mods/VSCreativeMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
