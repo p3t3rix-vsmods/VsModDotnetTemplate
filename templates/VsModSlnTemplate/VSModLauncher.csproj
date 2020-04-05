@@ -4,7 +4,11 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <ProjectGuid>{203DFBF1-3599-43FD-8487-E1C79C2B788F}</ProjectGuid>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Compile Remove="mods\**" />
+    <EmbeddedResource Remove="mods\**" />
+    <None Remove="mods\**" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="VintagestoryAPI">
       <HintPath>E:\Games\Vintagestory\VintagestoryAPI.dll</HintPath>
