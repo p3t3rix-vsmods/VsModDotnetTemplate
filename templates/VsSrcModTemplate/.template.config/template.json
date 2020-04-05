@@ -5,10 +5,10 @@
         "Vintage Story",
         "Mod"
     ],
-    "identity": "P3t3rix.VsModTemplate",
-    "name": "Vintage Story mod template",
-    "shortName": "vsmod",
-    "sourceName": "VsModTemplate",
+    "identity": "P3t3rix.VsSrcModTemplate",
+    "name": "Vintage Story source mod template (compiled by VS)",
+    "shortName": "vssrcmod",
+    "sourceName": "VsSrcModTemplate",
     "preferNameDirectory": true,
     "forms": {
         "ValueAfterLastDot": {

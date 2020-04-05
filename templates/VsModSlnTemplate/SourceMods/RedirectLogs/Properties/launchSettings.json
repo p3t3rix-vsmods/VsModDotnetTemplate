@@ -3,7 +3,7 @@
     "VsModLauncher": {
       "commandName": "Executable",
       "executablePath": "{{TEMPLATE-VSDIR}}/Vintagestory.exe",
-      "commandLineArgs": "--addModPath=\"$(SolutionDir)mods\" --openWorld=\"modsamplestest\" -p3"
+      "commandLineArgs": "--addModPath=\"$(SolutionDir)SourceMods\" --addModPath=\"$(SolutionDir)bin\" -p3"
     }
   }
 }
