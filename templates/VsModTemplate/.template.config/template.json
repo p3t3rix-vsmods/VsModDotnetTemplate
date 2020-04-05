@@ -46,19 +46,19 @@
             "type": "parameter",
             "dataType": "bool",
             "description": "Whether to add a reference to vs-essentials",
-            "defaultValue": "false"
+            "defaultValue": "true"
         },
         "add-survival": {
             "type": "parameter",
             "dataType": "bool",
             "description": "Whether to add a reference to vs-survival",
-            "defaultValue": "false"
+            "defaultValue": "true"
         },
         "add-creative": {
             "type": "parameter",
             "dataType": "bool",
             "description": "Whether to add a reference to vs-creative",
-            "defaultValue": "false"
+            "defaultValue": "true"
         }
     }
 }
