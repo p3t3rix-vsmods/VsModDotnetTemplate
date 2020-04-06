@@ -46,10 +46,15 @@ Currently this setup is primarily focused on Visual Studio user. If there is int
 ## Technical Details
 
 Basically this template does the following:
+
 -Create basic folders and a modinfo.json
+
 -Add references to the VintageStory dlls
+
 -Create a post build step for compiled mods to copy the binary and the assets to the solutiondir/bin
+
 -Create a launchSettings.json that start VintageStory with --addModPaths to direct it to the compile output
+
 -Add the RedirectLogs mod to the solution for easier debugging
 
 
