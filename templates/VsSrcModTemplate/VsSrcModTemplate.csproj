@@ -25,9 +25,4 @@
     <Folder Include="assets\" />
     <Folder Include="src\" />
   </ItemGroup>
-
-  <Target Name="Copy" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Debug'">
-    <Copy SourceFiles="$(TargetPath)" DestinationFolder="{{TEMPLATE-VSDATADIR}}/Mods" />
-    <Copy SourceFiles="$(TargetDir)/$(TargetName).pdb" DestinationFolder="{{TEMPLATE-VSDATADIR}}/Mods" />
-  </Target>
 </Project>

@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "start-all-mods-in-sln": {
+	"start-all-mods-in-sln": {
       "commandName": "Executable",
       "executablePath": "{{TEMPLATE-VSDIR}}/Vintagestory.exe",
       "commandLineArgs": "--addModPath=\"$(SolutionDir)SourceMods\" \"$(SolutionDir)bin\" "
