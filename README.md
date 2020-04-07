@@ -20,15 +20,10 @@ Go to the directory where the solution should be residing and execute:
 ```
  $ dotnet new vsmodsln 
 ```
-### 3. a) To create a new compiled mod:
-Go to the ./CompiledMods/MyMod directory and create your mod (or specify it via the -o parameter of dotnet new) via :
+### 3. To create a new compiled mod:
+Go to the ./Mods/MyMod directory and create your mod (or specify it via the -o parameter of dotnet new) via :
 ``` 
  $ dotnet new vsbinmod --mod-id mymodid
-```
-### 3. b) To create a new source mod:
-Go to the ./SourceMods/MyMod directory (or specify it via the -o parameter of dotnet new) and create your mod via :
-```
- $ dotnet new vssrcmod --mod-id mymodid
 ```
 
 ### 4. Add your Mod to the solution
@@ -56,7 +51,6 @@ Basically this template does the following:
 -Create a launchSettings.json that start VintageStory with --addModPaths to direct it to the compile output
 
 -Add the RedirectLogs mod to the solution for easier debugging
-
 
 
 ## Thanks:
