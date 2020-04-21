@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.7</PackageVersion>
+    <PackageVersion>1.7.1</PackageVersion>
     <PackageId>P3t3rix.VsModTemplate</PackageId>
     <Authors>P3t3rix</Authors>
     <Title>Vintage Story Mod Template</Title>
